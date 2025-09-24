@@ -11,7 +11,7 @@ const nextConfig = {
     ],
   },
   eslint: {
-    ignoreDuringBuilds: true, // ← skip ESLint errors in CI
+    ignoreDuringBuilds: true, // ← skip ESLint errors on Vercel
   },
 };
 
