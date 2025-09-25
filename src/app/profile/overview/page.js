@@ -151,7 +151,7 @@ to impact people mentally, emotionally and behaviorally
                  color: '#E3E0DC'
                }}
              >
-               Great brands aren't products or services.
+               Great brands arent products or services.
              </h2>
             <h2
               className="leading-tight"
@@ -477,7 +477,7 @@ We build, activate and promote these experiences across every interaction with y
                     color: '#6E6F70'
                   }}
                 >
-                  We seamlessly integrate as an extension of your team. There's no distinction between 'us' and 'them'; we operate as a unified force
+                  We seamlessly integrate as an extension of your team. There is no distinction between 'us' and 'them'; we operate as a unified force
                 </p>
               </div>
             </div>
