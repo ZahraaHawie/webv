@@ -1,12 +1,27 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { client, urlFor } from '../../sanity/lib/client';
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion';
 
+// -------------------------
+// Wrapper: provides Suspense boundary (required for useSearchParams)
+// -------------------------
 export default function LeadershipPage() {
+  return (
+    <Suspense fallback={<div />}>
+      <LeadershipPageInner />
+    </Suspense>
+  );
+}
+
+// -------------------------
+// The original page content
+// -------------------------
+function LeadershipPageInner() {
   const videoRef = useRef(null);
   const footerRef = useRef(null);
   const [showMoreArticles, setShowMoreArticles] = useState(false);
@@ -300,6 +315,7 @@ export default function LeadershipPage() {
           </motion.div>
         )}
       </motion.div>
+
       {/* Leadership Header */}
       <div className="w-screen h-screen relative overflow-hidden">
         <div className="absolute inset-0 z-0">
