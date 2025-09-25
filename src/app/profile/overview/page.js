@@ -477,7 +477,7 @@ We build, activate and promote these experiences across every interaction with y
                     color: '#6E6F70'
                   }}
                 >
-                  We seamlessly integrate as an extension of your team. There is no distinction between 'us' and 'them'; we operate as a unified force
+                  We seamlessly integrate as an extension of your team. There is no distinction between us and them; we operate as a unified force
                 </p>
               </div>
             </div>
