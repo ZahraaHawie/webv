@@ -35,9 +35,9 @@ interface Post {
   bottomImage?: any
 }
 
-export default async function IndustryArticlePage({ params }: { params: { slug: string } }) {
-  const { slug } = params
-
+export default async function IndustryArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  
   const query = `*[_type == "industryPost" && slug.current == $slug][0] {
     _id,
     title,
@@ -71,14 +71,12 @@ export default async function IndustryArticlePage({ params }: { params: { slug: 
     keyTakeaways,
     bottomImage
   }`
-
+  
   const post: Post = await client.fetch(query, { slug })
-
+  
   if (!post) {
     return <div>Industry post not found for slug: {slug}</div>
   }
-
+  
   return <IndustriesArticleClient post={post} />
 }
-
-
