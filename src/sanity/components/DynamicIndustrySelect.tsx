@@ -104,8 +104,8 @@ export function DynamicIndustrySelect(props: StringInputProps) {
       <div style={{ padding: '1rem', color: '#999' }}>
         <div>No industries found. This could be because:</div>
         <ul style={{ marginTop: '0.5rem', paddingLeft: '1rem' }}>
-          <li>The selected Transformation Template doesn't have a linked Leadership Template</li>
-          <li>The Leadership Template doesn't have any industries defined</li>
+          <li>The selected Transformation Template does not have a linked Leadership Template</li>
+          <li>The Leadership Template does not have any industries defined</li>
         </ul>
         <div style={{ marginTop: '0.5rem', fontSize: '12px' }}>
           <strong>Debug Info:</strong><br/>
