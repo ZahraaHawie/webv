@@ -66,7 +66,7 @@ export default function ContactPage() {
         <div className="max-w-[1500px] mx-auto px-1 md:px-2">
           {/* Page title */}
           <h1 className="text-black mb-10 md:mb-12" style={{ fontFamily: 'Lausanne', fontWeight: 450, letterSpacing: '-0.04em', lineHeight: 0.9, fontSize: 'clamp(44px,8vw,120px)' }}>
-            Let's Grow Together
+            Lets Grow Together
           </h1>
 
           {/* Grid */}
