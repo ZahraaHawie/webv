@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -10,14 +9,16 @@ const nextConfig = {
       },
     ],
   },
-  // ✅ TEMP bypasses to get a build out
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    appDir: true,
+  },
+  output: 'standalone', // ✅ helps avoid static export errors
 };
 
-export default nextConfig;
 
