@@ -1026,7 +1026,7 @@ export default function BrandPage() {
               Create.<br />Communicate.
             </h2>
             <p className="text-gray-700 max-w-lg" style={{ fontFamily: 'Lausanne', fontSize: 'clamp(16px, 1.2vw, 20px)', lineHeight: 1.6, fontWeight: 400 }}>
-              A signature program to craft your brand's essence with compelling narratives, distinctive identities, and engaging content for unique competitive positioning.
+              A signature program to craft your brands essence with compelling narratives, distinctive identities, and engaging content for unique competitive positioning.
             </p>
           </div>
         </div>
