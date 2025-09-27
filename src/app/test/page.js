@@ -166,10 +166,10 @@ export default function Home() {
         Hybrid Human Experiences<sup>®</sup>
       </motion.p>
       <motion.h2
-        className="text-black leading-[0.9]"
+        className="text-black leading-[0.8]"
         style={{
           fontFamily: 'Lausanne',
-          fontWeight: 400,
+          fontWeight: 350,
           letterSpacing: '-0.02em',
           fontSize: 'clamp(54px, 12vw, 150px)',
         }}
@@ -186,7 +186,15 @@ export default function Home() {
     {/* Right media */}
     <div className="lg:col-span-5 relative">
       <motion.div className="absolute right-[-16px] md:right-[-24px] lg:right-[-40px] top-[93%] -translate-y-1/2 w-[60vw] lg:w-[48vw] h-[140vh] overflow-visible z-[1]" style={{ y: yImage }}>
-        <img src="/media/header.jpeg" alt="Architecture" className="w-full h-full object-cover" />
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+        >
+          <source src="/media/home-2.mp4" type="video/mp4" />
+        </video>
       </motion.div>
     </div>
   </div>
@@ -214,7 +222,7 @@ craft experience.</h3>
       </section>
 
       {/* spacer between company description and block 4 */}
-      <div className="h-12 md:h-16 lg:h-20"></div>
+      <div className="h-24 md:h-32 lg:h-40"></div>
 
             {/* Block 4 — EXACT from services/brand-transformation */}
             <section data-theme="light" data-block="4" className="relative flex flex-col">
@@ -393,7 +401,7 @@ craft experience.</h3>
                   className="w-full object-cover"
                   style={{ height: '334px', width: '274px' }}
                 >
-                  <source src="/media/home-2.mp4" type="video/mp4" />
+                  <source src="/media/home-8.mp4" type="video/mp4" />
                 </video>
               </motion.div>
               
@@ -416,7 +424,7 @@ craft experience.</h3>
                   className="w-full object-cover"
                   style={{ height: '334px', width: '274px' }}
                 >
-                  <source src="/media/home-5.mp4" type="video/mp4" />
+                  <source src="/media/home-9.mp4" type="video/mp4" />
                 </video>
               </motion.div>
             </div>
@@ -619,8 +627,8 @@ craft experience.</h3>
       {/* Spacer between sections */}
       <div className="h-24 md:h-32 lg:h-40 bg-white"></div>
 
-      {/* First Two Pinned Viewport Sections - Extended Duration */}
-      <div className="relative h-[400vh]">
+      {/* Three Pinned Viewport Sections - Extended Duration */}
+      <div className="relative h-[300vh]">
         {/* First Viewport Section - Pinned Longer */}
         <section className="sticky top-0 h-[100vh] w-full overflow-hidden">
           <img 
@@ -740,67 +748,67 @@ craft experience.</h3>
             </div>
           </div>
         </section>
-      </div>
 
-      {/* Third Viewport Section - Quick Transition */}
-      <section className="relative h-[100vh] w-full overflow-hidden">
-        <img 
-          src="/media/sebastian.jpg"
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover"
-          onLoad={() => console.log('Third section image loaded successfully!')}
-          onError={(e) => console.error('Third section image failed to load:', e)}
-        />
-        
-        <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-10 lg:px-16 max-w-[1600px] mx-auto">
-          <div className="mb-8">
-            <p 
-              className="text-white mb-4 opacity-80" 
-              style={{ 
-                fontFamily: 'Lausanne', 
-                fontSize: '18px', 
-                fontWeight: 300, 
-                letterSpacing: '0.1em',
-                marginLeft: '10px'
-              }}
-            >
-              B2C
-            </p>
-            <h2
-              className="text-white leading-[0.9]"
-              style={{
-                fontFamily: 'Lausanne',
-                fontWeight: 300,
-                letterSpacing: '-0.02em',
-                fontSize: 'clamp(48px, 8vw, 120px)',
-              }}
-            >
-              Sebastian<br />
-              Wolf
-            </h2>
-          </div>
-
-          <div className="absolute top-1/2 right-16 md:right-20 lg:right-24 transform -translate-y-1/2">
-            <div className="relative">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
-                className="w-full object-cover shadow-2xl"
-                style={{ height: '390px', width: '488px' }}
+        {/* Third Viewport Section - Now with Card Transition */}
+        <section className="sticky top-0 h-[100vh] w-full overflow-hidden">
+          <img 
+            src="/media/sebastian.jpg"
+            alt="Background"
+            className="absolute inset-0 w-full h-full object-cover"
+            onLoad={() => console.log('Third section image loaded successfully!')}
+            onError={(e) => console.error('Third section image failed to load:', e)}
+          />
+          
+          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-10 lg:px-16 max-w-[1600px] mx-auto">
+            <div className="mb-8">
+              <p 
+                className="text-white mb-4 opacity-80" 
+                style={{ 
+                  fontFamily: 'Lausanne', 
+                  fontSize: '18px', 
+                  fontWeight: 300, 
+                  letterSpacing: '0.1em',
+                  marginLeft: '10px'
+                }}
               >
-                <source src="/media/sw-video.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-0 h-0 border-l-[12px] border-l-white border-t-[9px] border-t-transparent border-b-[9px] border-b-transparent ml-1"></div>
+                B2C
+              </p>
+              <h2
+                className="text-white leading-[0.9]"
+                style={{
+                  fontFamily: 'Lausanne',
+                  fontWeight: 300,
+                  letterSpacing: '-0.02em',
+                  fontSize: 'clamp(48px, 8vw, 120px)',
+                }}
+              >
+                Sebastian<br />
+                Wolf
+              </h2>
+            </div>
+
+            <div className="absolute top-1/2 right-16 md:right-20 lg:right-24 transform -translate-y-1/2">
+              <div className="relative">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  className="w-full object-cover shadow-2xl"
+                  style={{ height: '390px', width: '488px' }}
+                >
+                  <source src="/media/sw-video.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <div className="w-0 h-0 border-l-[12px] border-l-white border-t-[9px] border-t-transparent border-b-[9px] border-b-transparent ml-1"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
         {/* Block 8 (LIGHT) */}
         <section data-theme="light" data-block="8" className="w-full bg-white py-24">
